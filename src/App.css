@@ -1,0 +1,107 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40px;
+  display: inline-block;
+}
+
+.App-header {
+  background-color: rgba(17, 19, 27, 1);
+  height: 50px;
+  color: white;
+  position: relative;
+  text-align: left;
+}
+
+.App-title {
+  font-size: 1.5em;
+  display: inline-block;
+  margin: 0px;
+  vertical-align: super;
+
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+.board {
+  width: 100%;
+  min-height: 80vh;
+  background-color: rgba(17, 19, 27, 1);
+  padding-top: 80px;
+}
+
+.box {
+  min-width: 400px;
+  min-height: 200px;
+  display: inline-block;
+  background-color: rgba(28, 29, 47, 1);
+  margin: 0 10px 10px 0;
+  padding: 15px;
+  box-shadow: 9px 10px 27px 0px rgba(16, 16, 16, 1);
+}
+.table {
+  min-width: 800px;
+}
+
+.box .box-header {
+  color: rgb(52, 73, 212);
+  font-size: 30px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+ul.list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+  color: #98a6ad;
+  line-height: 25px;
+  font-size: 18px;
+  font-family: helvetica;
+  display: table;
+}
+
+ul.list li {
+  border: 0.2px solid rgba(50, 54, 50, 1);
+  margin-top: 2px;
+  display: table-row;
+}
+
+
+ul.list li span {
+  margin-right: 10px;
+  display: table-cell;
+}
+
+ul.list li span.icon {
+  display: block;
+  width: 28px;
+  height: 28px;
+}
+
+.red {
+  color: rgb(193,46,43);
+}
+.green {
+  color: rgb(55,200,64);
+}
+.blue {
+  color: rgb(55,75,212);
+}
+
+.yellow {
+  color: rgb(253,255,12);
+}
