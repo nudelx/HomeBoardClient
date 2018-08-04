@@ -7,7 +7,7 @@ const ListItem = ({ NAME, MAC, IP, TIME, OLD, NEW }) => {
   const deviceIcon = getDeviceIcon(name)
   return (
     <li>
-      <span className={`icon ${OLD ? "red" : NEW ? "yellow" : "green"}`}>
+      <span className={`icon center ${OLD ? "red" : NEW ? "yellow" : "green"}`}>
         {" "}
         {OLD ? "✘" : NEW ? "✷" : "✔︎"}
       </span>
