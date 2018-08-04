@@ -1,0 +1,78 @@
+{
+  "94-DE-80-7E-92-47": {
+    "NAME": "Root-Server",
+    "ADDDR": "192.168.0.100"
+  },
+  "00-14-D1-79-B2-5C": {
+    "NAME": "Natasha-PC",
+    "ADDDR": "192.168.0.101"
+  },
+  "6C-AD-F8-84-C4-D7": {
+    "NAME": "ChromeCast",
+    "ADDDR": "192.168.0.105"
+  },
+  "A4-77-33-29-AD-29": {
+    "NAME": "ChromeCast-badroom",
+    "ADDDR": "192.168.0.102"
+  },
+  "3C-BD-D8-E7-2C-A1": {
+    "NAME": "TV-LivingRoom",
+    "ADDDR": "192.168.0.110"
+  },
+  "10-08-C1-94-9C-FE": {
+    "NAME": "TV-BedRoom",
+    "ADDDR": "192.168.0.109"
+  },
+  "00-1C-85-0D-04-8A": {
+    "NAME": "Xtreamer",
+    "ADDDR": "192.168.0.125"
+  },
+  "08-00-27-DE-50-54": {
+    "NAME": "Dev-Server",
+    "ADDDR": "192.168.0.150"
+  },
+  "00-F5-F5-14-0A-AA": {
+    "NAME": "IP-CAM",
+    "ADDDR": "192.168.0.180"
+  },
+  "8C-3A-E3-6D-57-E8": {
+    "NAME": "Android Natasha",
+    "ADDDR": "192.168.0.104"
+  },
+  "C0-EE-FB-F6-34-AA": {
+    "NAME": "Alex OPT 3T",
+    "ADDDR": "192.168.0.103"
+  },
+  "50-46-5D-7F-29-BD": {
+    "NAME": "Nexus 7",
+    "ADDDR": "192.168.0.106"
+  },
+  "20-64-32-4C-E5-25": {
+    "NAME": "Android SGS II",
+    "ADDDR": "192.168.0.108"
+  },
+  "B8-8D-12-0C-8C-C8": {
+    "NAME": "alexs-Air",
+    "ADDDR": "192.168.0.107"
+  },
+  "B8-E8-56-46-7E-A0": {
+    "NAME": "Alexs-MBP",
+    "ADDDR": "192.168.0.111"
+  },
+  "AC-C1-EE-60-12-42": {
+    "NAME": "MI-PAD2",
+    "ADDDR": "192.168.0.112"
+  },
+  "00-E1-B0-10-10-89": {
+    "NAME": "PI 2",
+    "ADDDR": "192.168.0.XXX"
+  },
+  "C0-EE-FB-46-FC-69": {
+    "NAME": "Android Alex OPT2",
+    "ADDDR": "192.168.0.102"
+  },
+  "F4-F5-D8-95-28-FA": {
+    "NAME": "Chromecast LivingRoom",
+    "ADDDR": "192.168.0.105"
+  }
+}
