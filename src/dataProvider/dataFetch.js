@@ -21,7 +21,7 @@ export const serverFetch = () => {
         TIME: "01:34:15"
       },
       ROW_3: {
-        NAME: "Xtreamer",
+        NAME: "Alexs-MBP",
         MAC: "B899999999999",
         IP: "192.168.0.101",
         TIME: "Permanent"
