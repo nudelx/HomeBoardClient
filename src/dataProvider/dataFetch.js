@@ -33,7 +33,7 @@ export const serverFetch = () => {
         TIME: "01:38:33"
       },
       ROW_5: {
-        NAME: "PI 2",
+        NAME: "MI-PAD2",
         MAC: "1rrrrrrrrt666E",
         IP: "192.168.0.111",
         TIME: "Permanent"
