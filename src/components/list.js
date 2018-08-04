@@ -1,9 +1,7 @@
 import React from "react"
-import ListItem from './listItem'
+import ListItem from "./listItem"
 
 const List = ({ data }) => {
-  console.log("in list", data)
-
   return (
     <ul className="list">
       {data &&

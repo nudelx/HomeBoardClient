@@ -36,7 +36,6 @@ class App extends Component {
       localStorage.setItem("localDataDhcp", JSON.stringify(data))
       this.setState({ data: diffData(localData, data) })
     })
-
   }
 
   render() {
