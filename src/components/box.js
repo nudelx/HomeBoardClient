@@ -1,6 +1,6 @@
 import React from "react"
 import List from "./list"
-const Box = ({ data }) => {
+const Box = ({ data, onReload }) => {
   return (
     <div className="box table">
       <div className="box-header">
@@ -9,6 +9,9 @@ const Box = ({ data }) => {
         ) : (
           <div className="icon spinner" />
         )}
+        <span className="reload-holder" onClick={onReload}>
+          <div className="reload" />
+        </span>
       </div>
       <List data={data} />
     </div>

@@ -37,7 +37,7 @@ class App extends Component {
         <Board>
           {() => (
             <React.Fragment>
-              <Box data={this.state.dhcp} />
+              <Box data={this.state.dhcp} onReload={this.getData} />
               {/* <Box data={this.state.traffic} /> */}
               {/* <Box data={this.state.hosts} /> */}
             </React.Fragment>
