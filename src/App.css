@@ -79,7 +79,6 @@ ul.list {
 }
 
 ul.list li {
-  border: 0.2px dotted #26283f;
   margin-top: 2px;
   display: table-row;
   line-height: 45px;
@@ -88,6 +87,8 @@ ul.list li {
 ul.list li span {
   margin-right: 10px;
   display: table-cell;
+  border: 0.2px dotted #26283f;
+  padding: 0px 5px;
 }
 
 ul.list li span.icon {

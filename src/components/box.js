@@ -29,7 +29,7 @@ class Box extends Component {
 
   render() {
     const { data } = this.state
-    const { title } = this.props
+    const { title, type } = this.props
     return (
       <div className="box table">
         <div className="box-header">
@@ -42,7 +42,7 @@ class Box extends Component {
             <div className="reload" />
           </span>
         </div>
-        <List data={data} />
+        <List data={data} type={type} />
       </div>
     )
   }

@@ -25,9 +25,9 @@ const ListItem = ({
       <span>
         <Badge txt={OLD ? "removed" : NEW ? "new" : "online"} />
       </span>
-      <span>{TIME || TOT_BYTE}</span>
-      <span>{OLD || TOT_PKTS}</span>
-      <span>{CUR_PKTS}</span>
+      {TIME || TOT_BYTE ? <span>{TIME || TOT_BYTE}</span> : null}
+      {OLD || TOT_PKTS ? <span>{OLD || TOT_PKTS}</span> : null}
+      {CUR_PKTS ? <span>{CUR_PKTS}</span> : null}
     </li>
   )
 }
