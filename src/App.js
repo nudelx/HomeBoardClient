@@ -12,10 +12,9 @@ class App extends Component {
   getData = () => {
     serverFetch().then(incoming => {
       const localData = JSON.parse(localStorage.localDataDhcp || '{}')
-      localStorage.setItem('localDataDhcp', JSON.stringify(incoming || {}))
-      debugger // eslint-disable-line
+      localStorage.setItem('localDataDhcp', JSON.stringify(incoming))
       this.setState({
-        dhcp: diffData(localData, incoming),
+        dhcp: diffData({ ...localData }, { ...incoming }),
         traffic: {},
         hosts: {}
       })
