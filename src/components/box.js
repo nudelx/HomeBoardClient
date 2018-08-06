@@ -3,8 +3,7 @@ import List from "./list"
 import { serverFetch } from "../dataProvider/dataFetch"
 import { diffData } from "../dataProvider/dataDiff"
 import { BOX_MAP } from "../constants/constNames"
-import Reload from "./reload"
-import Spinner from "./spinner"
+import BoxHeader from "./boxHeader"
 
 class Box extends Component {
   state = {}
@@ -34,14 +33,7 @@ class Box extends Component {
     const { title, type } = this.props
     return (
       <div className="box table">
-        <div className="box-header">
-          {data ? (
-            `${title} - ${Object.keys(data).length} devices`
-          ) : (
-            <Spinner />
-          )}
-          <Reload onClick={this.getData} />
-        </div>
+        <BoxHeader data={data} title={title} onClick={this.getData} />
         <List data={data} type={type} />
       </div>
     )
