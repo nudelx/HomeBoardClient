@@ -1,4 +1,4 @@
-import { BOX_MAP, BOX_NAMES } from "../constants/constNames"
+import { BOX_MAP } from "../constants/constNames"
 
 export const DHCP = {
   ROW_0: {

@@ -1,5 +1,4 @@
 import React from "react"
-import { BOX_NAMES } from "../constants/constNames"
 import ListItem from "./listItem"
 import { headers } from "../dataProvider/dataHeaders"
 import ListHeader from "./listHeaders"

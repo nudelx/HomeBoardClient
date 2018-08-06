@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import List from "./list"
 import { serverFetch } from "../dataProvider/dataFetch"
 import { diffData } from "../dataProvider/dataDiff"
-import { BOX_NAMES, BOX_MAP } from "../constants/constNames"
+import { BOX_MAP } from "../constants/constNames"
 
 class Box extends Component {
   state = {}
