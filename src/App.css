@@ -135,11 +135,13 @@ ul.list li span.center {
 }
 
 .status-online {
-  background-color: #4dbc88;
+  background-color: #398963;
 }
+
 .status-new {
   background-color: #4089c8;
 }
+
 .status-removed {
   background-color: #ed6a79;
 }
