@@ -3,6 +3,8 @@ import List from "./list"
 import { serverFetch } from "../dataProvider/dataFetch"
 import { diffData } from "../dataProvider/dataDiff"
 import { BOX_MAP } from "../constants/constNames"
+import Reload from "./reload"
+import Spinner from "./spinner"
 
 class Box extends Component {
   state = {}
@@ -36,11 +38,9 @@ class Box extends Component {
           {data ? (
             `${title} - ${Object.keys(data).length} devices`
           ) : (
-            <div className="icon spinner" />
+            <Spinner />
           )}
-          <span className="reload-holder" onClick={this.getData}>
-            <div className="reload" />
-          </span>
+          <Reload onClick={this.getData} />
         </div>
         <List data={data} type={type} />
       </div>
