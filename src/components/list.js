@@ -1,26 +1,8 @@
 import React from "react"
 import { BOX_NAMES } from "../constants/constNames"
 import ListItem from "./listItem"
-
-const headers = {
-  [BOX_NAMES.DHCP]: ["#", "name", "IP", "MAC", "STATUS", "TIME"],
-  [BOX_NAMES.TRAFFIC]: [
-    "#",
-    "name",
-    "IP",
-    "MAC",
-    "STATUS",
-    "T_BT",
-    "T_PKT",
-    "C_PKT"
-  ]
-}
-
-const ListHeader = ({ data, headers }) => (
-  <li className={"list-header"}>
-    {headers.map(h => <span key={h}>{h}</span>)}
-  </li>
-)
+import { headers } from "../dataProvider/dataHeaders"
+import ListHeader from "./listHeaders"
 
 const List = ({ data, type }) => {
   return (
