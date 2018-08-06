@@ -10,7 +10,6 @@ export const diffData = (oldData = {}, newData = {}) => {
       all[item] = newContent
       delete newData[item]
     } else {
-      // all[item] = { ...newContent,  NEW:true }
       all[item + "_old"] = { ...oldContent, OLD: true }
     }
     return all

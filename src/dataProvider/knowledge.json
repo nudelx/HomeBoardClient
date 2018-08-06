@@ -23,6 +23,10 @@
     "NAME": "TV-BedRoom",
     "ADDDR": "192.168.0.109"
   },
+  "34-CE-00-E8-2E-E9": {
+    "NAME": "Mi robot",
+    "ADDDR": "192.168.0.107"
+  },
   "00-1C-85-0D-04-8A": {
     "NAME": "Xtreamer",
     "ADDDR": "192.168.0.125"
