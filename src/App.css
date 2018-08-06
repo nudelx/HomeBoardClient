@@ -38,7 +38,7 @@
 
 .board {
   width: 100%;
-  min-height: 80vh;
+  min-height: 100vh;
   background-color: rgba(17, 19, 27, 1);
   padding-top: 80px;
 }
