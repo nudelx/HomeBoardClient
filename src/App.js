@@ -1,18 +1,18 @@
-import React, { Component } from "react"
-import "./App.css"
-import Header from "./components/header"
-import Board from "./components/board"
-import Box from "./components/box"
-import { diffData } from "./dataProvider/dataDiff"
-import { serverFetch } from "./dataProvider/dataFetch"
+import React, { Component } from 'react'
+import './App.css'
+import Header from './components/header'
+import Board from './components/board'
+import Box from './components/box'
+import { diffData } from './dataProvider/dataDiff'
+import { serverFetch } from './dataProvider/dataFetch'
 
 class App extends Component {
   state = {}
 
   getData = () => {
     serverFetch().then(incoming => {
-      const localData = JSON.parse(localStorage.localDataDhcp || "{}")
-      localStorage.setItem("localDataDhcp", JSON.stringify(incoming))
+      const localData = JSON.parse(localStorage.localDataDhcp || '{}')
+      localStorage.setItem('localDataDhcp', JSON.stringify(incoming))
       this.setState({
         dhcp: diffData(localData, incoming),
         traffic: {},
