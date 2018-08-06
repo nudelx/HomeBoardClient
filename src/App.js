@@ -14,8 +14,7 @@ class App extends Component {
           {() => (
             <React.Fragment>
               <Box type={BOX_NAMES.DHCP} />
-              {/* <Box data={this.state.traffic} /> */}
-              {/* <Box data={this.state.hosts} /> */}
+              {/* <Box data={BOX_NAMES.TRAFFIC} /> */}
             </React.Fragment>
           )}
         </Board>
