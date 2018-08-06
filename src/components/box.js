@@ -2,19 +2,18 @@ import React, { Component } from 'react'
 import List from './list'
 import { serverFetch } from '../dataProvider/dataFetch'
 import { diffData } from '../dataProvider/dataDiff'
+import { BOX_NAMES, BOX_MAP } from '../constants/constNames'
 
 class Box extends Component {
   state = {}
 
   getData = () => {
     const { type } = this.props
-    serverFetch().then(incoming => {
-      const localData = JSON.parse(localStorage.localDataDhcp || '{}')
-      localStorage.setItem('localDataDhcp', JSON.stringify(incoming))
+    serverFetch({ API_PATH: BOX_MAP[type] }).then(incoming => {
+      const localData = JSON.parse(localStorage[`localData_${type}`] || '{}')
+      localStorage.setItem(`localData_${type}`, JSON.stringify(incoming))
       this.setState({
-        dhcp: diffData({ ...localData }, { ...incoming }),
-        traffic: {},
-        hosts: {}
+        data: diffData({ ...localData }, { ...incoming })
       })
     })
   }
@@ -29,12 +28,12 @@ class Box extends Component {
   }
 
   render() {
-    const { dhcp } = this.state
+    const { data } = this.state
     return (
       <div className="box table">
         <div className="box-header">
-          {dhcp ? (
-            `home dhcp - ${Object.keys(dhcp).length} devices`
+          {data ? (
+            `home dhcp - ${Object.keys(data).length} devices`
           ) : (
             <div className="icon spinner" />
           )}
@@ -42,7 +41,7 @@ class Box extends Component {
             <div className="reload" />
           </span>
         </div>
-        <List data={dhcp} />
+        <List data={data} />
       </div>
     )
   }
