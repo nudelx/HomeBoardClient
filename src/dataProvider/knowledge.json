@@ -78,5 +78,9 @@
   "F4-F5-D8-95-28-FA": {
     "NAME": "Chromecast LivingRoom",
     "ADDDR": "192.168.0.105"
+  },
+  "AC-BC-32-BC-59-A1": {
+    "NAME": "Alexs-MBP-2",
+    "ADDDR": "192.168.0.103"
   }
 }
