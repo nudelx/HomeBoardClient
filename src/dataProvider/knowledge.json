@@ -23,6 +23,10 @@
     "NAME": "TV-BedRoom",
     "ADDDR": "192.168.0.109"
   },
+  "34-CE-00-E8-2E-E9": {
+    "NAME": "Mi robot",
+    "ADDDR": "192.168.0.107"
+  },
   "00-1C-85-0D-04-8A": {
     "NAME": "Xtreamer",
     "ADDDR": "192.168.0.125"
@@ -73,6 +77,18 @@
   },
   "F4-F5-D8-95-28-FA": {
     "NAME": "Chromecast LivingRoom",
+    "ADDDR": "192.168.0.105"
+  },
+  "AC-BC-32-BC-59-A1": {
+    "NAME": "Alexs-MBP-2",
+    "ADDDR": "192.168.0.103"
+  },
+  "00-00-00-00-00-00": {
+    "NAME": "Ubuntu-Server",
+    "ADDDR": "192.168.0.150"
+  },
+  "C0-EE-FB-F5-0B-16": {
+    "NAME": "OnePlus_3T",
     "ADDDR": "192.168.0.105"
   }
 }

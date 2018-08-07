@@ -1,19 +1,20 @@
-import React, { Component } from 'react'
-import List from './list'
-import { serverFetch } from '../dataProvider/dataFetch'
-import { diffData } from '../dataProvider/dataDiff'
-import { BOX_NAMES, BOX_MAP } from '../constants/constNames'
+import React, { Component } from "react"
+import List from "./list"
+import { serverFetch } from "../dataProvider/dataFetch"
+import { diffData } from "../dataProvider/dataDiff"
+import { BOX_MAP } from "../constants/constNames"
+import BoxHeader from "./boxHeader"
 
 class Box extends Component {
   state = {}
 
   getData = () => {
-    const { type } = this.props
+    const { type, diff } = this.props
     serverFetch({ API_PATH: BOX_MAP[type] }).then(incoming => {
-      const localData = JSON.parse(localStorage[`localData_${type}`] || '{}')
+      const localData = JSON.parse(localStorage[`localData_${type}`] || "{}")
       localStorage.setItem(`localData_${type}`, JSON.stringify(incoming))
       this.setState({
-        data: diffData({ ...localData }, { ...incoming })
+        data: diff ? diffData({ ...localData }, { ...incoming }) : incoming
       })
     })
   }
@@ -29,19 +30,11 @@ class Box extends Component {
 
   render() {
     const { data } = this.state
+    const { title, type } = this.props
     return (
       <div className="box table">
-        <div className="box-header">
-          {data ? (
-            `home dhcp - ${Object.keys(data).length} devices`
-          ) : (
-            <div className="icon spinner" />
-          )}
-          <span className="reload-holder" onClick={this.getData}>
-            <div className="reload" />
-          </span>
-        </div>
-        <List data={data} />
+        <BoxHeader data={data} title={title} onClick={this.getData} />
+        <List data={data} type={type} />
       </div>
     )
   }
