@@ -15,6 +15,10 @@
     "NAME": "ChromeCast-badroom",
     "ADDDR": "192.168.0.102"
   },
+  "F4-F5-D8-2B-58-46": {
+    "NAME": "ChromeCast BadRoom",
+    "ADDDR": "192.168.0.102"
+  },
   "3C-BD-D8-E7-2C-A1": {
     "NAME": "TV-LivingRoom",
     "ADDDR": "192.168.0.110"
