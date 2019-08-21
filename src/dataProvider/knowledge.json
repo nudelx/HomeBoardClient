@@ -94,5 +94,9 @@
   "C0-EE-FB-F5-0B-16": {
     "NAME": "OnePlus_3T",
     "ADDDR": "192.168.0.105"
+  },
+  "28-AD-3E-FA-A3-7B": {
+    "NAME": "LivingRoomCamera",
+    "ADDDR": "192.168.0.105"
   }
 }

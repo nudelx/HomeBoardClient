@@ -1,35 +1,39 @@
 export const iconsMap = {
   tv: {
     regex: /tv/i,
-    icon: "tv"
+    icon: 'tv'
   },
   cast: {
     regex: /cast/i,
-    icon: "cast"
+    icon: 'cast'
   },
   android: {
     regex: /android/i,
-    icon: "android"
+    icon: 'android'
   },
   pc: {
     regex: /pc|mbp|mba|server/i,
-    icon: "pc"
+    icon: 'pc'
   },
   pi: {
     regex: /pi/i,
-    icon: "pi"
+    icon: 'pi'
   },
   onePlus: {
     regex: /oneplus|opt/i,
-    icon: "onePlus"
+    icon: 'onePlus'
   },
   robot: {
     regex: /robo/i,
-    icon: "robot"
+    icon: 'robot'
   },
   tabled: {
     regex: /tabled|pad/i,
-    icon: "tabled"
+    icon: 'tabled'
+  },
+  camera: {
+    regex: /camera/i,
+    icon: 'camera'
   }
 }
 
