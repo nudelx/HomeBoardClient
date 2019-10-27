@@ -34,6 +34,14 @@ export const iconsMap = {
   camera: {
     regex: /camera/i,
     icon: 'camera'
+  },
+  boiler: {
+    regex: /boiler/i,
+    icon: 'boiler'
+  },
+  androidtv: {
+    regex: /androidtv/i,
+    icon: 'androidtv'
   }
 }
 
